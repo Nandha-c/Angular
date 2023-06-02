@@ -28,11 +28,9 @@ export class  DepartmentServiceService
   {
     return this.http.get(`${this.baseApiurl + '/api/Department'}/${id}`)
   }
-  // updateDepartment(DepartmentID:number,updateDepartment:Departments){
-  //   return this.http.put<Departments>(`${this.baseApiurl + '/api/Department'}/${DepartmentID}` + DepartmentID,updateDepartment)
-  // }
+
   updateDepartment(departmentID: number, updateDepartment: Departments): Observable<Departments> {
-    // Perform the HTTP PUT request to update the department
+
     const headers = new HttpHeaders()
     .set('content-type','application/json')
     .set('Access-Control-Allow-Origin', '*'); 

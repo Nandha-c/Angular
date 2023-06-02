@@ -9,6 +9,11 @@ import { EditDepartmentComponent } from './edit-department/edit-department.compo
 
 const routes: Routes = [
   {
+    path: '',
+    component:StudentComponent
+
+  },
+  {
     path: 'Student',
     component:StudentComponent
 

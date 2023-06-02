@@ -41,7 +41,7 @@ constructor(private departmentService:DepartmentServiceService,private router: R
     };
   }
   redirectToStudentList() {
-    // Redirect to the student list page
+
     this.router.navigate(['/Department']);
   }
 
